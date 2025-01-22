@@ -1,0 +1,532 @@
+  <!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+  <title>FLIPKART</title>
+</head>
+<body class="bg-[#F1F2F4] ">
+    <!-- navbar section -->
+    <nav class="bg-blue-600 text-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+          <!-- Logo -->
+          <div class="flex flex-col items-center space-x-2">
+            <span class="text-lg font-bold">Flipkart</span>
+            <span class="text-sm text-yellow-300 font-semibold">Explore Plus</span>
+          </div>
+    
+          <!-- Search Bar -->
+          <div class="flex-1 mx-4">
+            <div class="relative flex items-center w-full px-4 py-1 text-sm text-gray-700  bg-gray-100 rounded focus:outline-none focus:ring-2 focus:ring-blue-400">
+              <input type="text" placeholder="Search for products, brands and more" class="relative flex items-center outline-none w-full px-1 py-2 text-sm text-gray-700 bg-gray-100 rounded focus:outline-none focus:ring-2 focus:ring-blue-400">
+                     <i class="ri-search-line text-gray-700 text-[20px] "></i>
+            </div>
+            
+          </div>
+    
+          <!-- Right Section -->
+          <div class=" flex items-center space-x-4">
+            <div class="relative group drop-down">
+              <button class=" relative px-4 py-2 text-white rounded  hover:text-white flex gap-2 items-center">
+                <i class=" ri-user-3-line"></i>
+                Login
+                <i class="flip-horizontal-top ri-arrow-down-s-line text-[20px]"></i>
+             
+            
+              <!-- Dropdown login -->
+              <div class="log-drp absolute hidden group-hover:block border-[1px] border-black top-[38px] right-[-71px] bg-white text-black mt-2 w-[250px] shadow-lg p-1">
+                <div class="flex justify-between border-b-[1px] border-black hover:bg-slate-400 p-1 hover:text-white">
+                  <a href="#" class="block py-2 text-sm text-gray-600 text-[16px]">New Customer?</a>
+                  <a href="#" class="block py-2 text-sm text-[#2563eb] text-[20px] font-[600]">Sign Up</a>
+                </div>
+                <!-- My profile -->
+                <div class="flex items-center gap-2 hover:bg-slate-400 p-1 hover:text-white">
+                  <i class="ri-user-3-line text-black"></i>
+                  <a href="#" class="block py-2 text-sm text-black text-[20px]">My profile</a>
+                </div>
+                <!-- Flipkart Plus Zone -->
+                <div class="flex items-center gap-2 hover:bg-slate-400 p-1 hover:text-white">
+                  <i class="ri-add-circle-fill text-black"></i>
+                  <a href="#" class="block py-2 text-sm text-black text-[20px]">Flipkart Plus Zone</a>
+                </div>
+                <!-- Orders -->
+                <div class="flex items-center gap-2 hover:bg-slate-400 p-1 hover:text-white">
+                  <i class="ri-shopping-basket-2-fill text-black"></i>
+                  <a href="#" class="block py-2 text-sm text-black text-[20px]">Orders</a>
+                </div>
+                <!-- Wishlist -->
+                <div class="flex items-center gap-2 hover:bg-slate-400 p-1 hover:text-white">
+                  <i class="ri-heart-add-fill text-black"></i>
+                  <a href="#" class="block py-2 text-sm text-black text-[20px]">Wishlist</a>
+                </div>
+                <!-- Rewards -->
+                <div class="flex items-center gap-2 hover:bg-slate-400 p-1 hover:text-white">
+                  <i class="ri-gift-fill text-black"></i>
+                  <a href="#" class="block py-2 text-sm text-black text-[20px]">Rewards</a>
+                </div>
+                <!-- Gift Card -->
+                <div class="flex items-center gap-2 hover:bg-slate-400 p-1 hover:text-white">
+                  <i class="ri-bank-card-fill text-black"></i>
+                  <a href="#" class="block py-2 text-sm text-black text-[20px]">Gift Card</a>
+                </div>
+              </div>
+            </button>
+            </div>            
+            
+            <!-- cart Section -->
+            <div class="px-4 py-2 text-white rounded  hover:text-white flex gap-2 items-center ">
+              <i class="ri-shopping-cart-2-line text-white"></i>
+              <a href="#" class="block py-2 text-sm text-white text-[20px] font-[600]">Cart</a>
+            </div>
+            <!-- store -->
+            <div class="px-4 py-2 text-white rounded  hover:text-white flex gap-2 items-center">
+              <i class="ri-store-3-fill text-white"></i>
+              <a href="#" class="block py-2 text-sm text-white text-[20px] font-[600]">Become a Seller</a>
+            </div>
+            
+           <!-- menu bar section -->
+            <div class="flex justify-between items-center py-2 text-white gap-2">
+              <div class="group flex items-center gap-2">
+                <div href="#" class="relative px-4 py-2 text-white rounded hover:text-white flex gap-2  items-center"><i class="text-[20px] font-[600] ri-more-2-line"></i>
+                <!-- menu dropdown -->
+                 <div class="menu-drp absolute hidden group-hover:block border-[1px] border-black top-[38px] right-[-50px] bg-white text-black mt-2 w-[250px] shadow-lg p-1">
+                  <div class="flex flex-col gap-2 py-2">
+                    <!-- Notification Preferences -->
+                     <div class="flex items-center gap-2 hover:bg-slate-400 p-1 hover:text-white">
+                      <i class="ri-notification-3-line text-black"></i>
+                      <a href="#" class="block py-2 text-sm text-black text-[20px] font-[600]">Notification Preferences</a>
+                     </div>
+                     <!-- 24x7 Customer Care Support -->
+                      <div class="flex items-center gap-2 hover:bg-slate-400 p-1 hover:text-white">
+                        <i class="ri-customer-service-2-fill text-black"></i>
+                        <a href="#" class="block py-2   ">24x7 Customer Care Support</a>
+                      </div>
+                      <!-- advertise -->
+                       <div class="flex items-center gap-2 hover:bg-slate-400 p-1 hover:text-white">
+                        <i class="ri-arrow-right-up-line text-black"></i>
+                        <a href="#" class="block py-2 text-sm text-black text-[20px] font-[600]">Advertise</a>
+                       </div>
+                       <!-- Download App -->
+                        <div class="flex items-center gap-2 hover:bg-slate-400 p-1 hover:text-white">
+                          <i class="ri-download-2-fill text-black"></i>
+                          <a href="#" class="block py-2 text-sm text-black text-[20px] font-[600]">Download App</a>
+                        </div>
+                  </div>
+                 </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+        <!-- prodect section -->
+         <div class="m-b-5 px-4 py-3 bg-white flex justify-center">
+          <!-- itom main -->
+           <div class="flex max-w-[1364px] justify-evenly items-center ">
+            <!-- Grocery -->
+            <div class=" min-w-[90px] p-[16px] flex flex-col items-center">
+            <img src="https://rukminim3.flixcart.com/flap/64/64/image/29327f40e9c4d26b.png?q=100" class="" alt="itom image">
+            <p class="text-sm text-black text-[20px] font-[600]">Grocery</p>
+            </div>
+             <!-- Mobiles -->
+             <div class=" min-w-[90px] p-[16px] flex flex-col items-center">
+              <img src="https://rukminim3.flixcart.com/flap/64/64/image/22fddf3c7da4c4f4.png?q=100" class="" alt="itom image">
+              <p class="text-sm  text-black text-[20px] font-[600]">Mobiles</p>
+              </div>
+               <!-- Grocery -->
+            <div class=" min-w-[90px] p-[16px] flex flex-col items-center">
+              <img src="https://rukminim3.flixcart.com/fk-p-flap/64/64/image/0d75b34f7d8fbcb3.png?q=100" class="" alt="itom image">
+              <p class="flex text-sm p-1 text-black text-[20px] font-[600]">Fashion<i class=" flip-horizontal-top ri-arrow-down-s-line text-[20px]"></i>
+              </p>
+              </div>
+               <!-- Grocery -->
+            <div class=" min-w-[90px] p-[16px] flex flex-col items-center">
+              <img src="https://rukminim3.flixcart.com/flap/64/64/image/69c6589653afdb9a.png?q=100" class="" alt="itom image">
+              <p class="flex text-sm p-1 text-black text-[20px] font-[600]">Electronics<i class=" flip-horizontal-top ri-arrow-down-s-line text-[20px]"></i>
+              </div>
+               <!-- Grocery -->
+            <div class=" min-w-[90px] p-[16px] flex flex-col items-center">
+              <img src="https://rukminim3.flixcart.com/flap/64/64/image/ab7e2b022a4587dd.jpg?q=100" class="" alt="itom image">
+              <p class="flex text-sm p-1 text-black text-[20px] font-[600]">Home & Furniture<i class=" flip-horizontal-top ri-arrow-down-s-line text-[20px]"></i>
+
+              </div>
+               <!-- Grocery -->
+            <div class=" min-w-[90px] p-[16px] flex flex-col items-center">
+              <img src="https://rukminim3.flixcart.com/fk-p-flap/64/64/image/0139228b2f7eb413.jpg?q=100" class="" alt="itom image">
+              <p class="text-sm text-black text-[20px] font-[600]">Appliances</p>
+              </div>
+               <!-- Grocery -->
+            <div class=" min-w-[90px] p-[16px] flex flex-col items-center">
+              <img src="https://rukminim3.flixcart.com/flap/64/64/image/71050627a56b4693.png?q=100" class="" alt="itom image">
+              <p class="text-sm text-black text-[20px] font-[600]">Flight Bookings</p>
+              </div>
+               <!-- Grocery -->
+            <div class=" min-w-[90px] p-[16px] flex flex-col items-center">
+              <img src="https://rukminim3.flixcart.com/flap/64/64/image/dff3f7adcf3a90c6.png?q=100" class="" alt="itom image">
+              <p class="flex text-sm p-1 text-black text-[20px] font-[600]">Beauty, Toys & More<i class=" flip-horizontal-top ri-arrow-down-s-line text-[20px]"></i>
+
+              </div>
+                <!-- Grocery -->
+            <div class=" min-w-[90px] p-[16px] flex flex-col items-center">
+              <img src="https://rukminim3.flixcart.com/fk-p-flap/64/64/image/05d708653beff580.png?q=100" class="" alt="itom image">
+               <p class="flex text-sm p-1 text-black text-[20px] font-[600]">Two Wheelers<i class=" flip-horizontal-top ri-arrow-down-s-line text-[20px]"></i>
+              </div> 
+           </div>
+         </div>
+         <!-- hero section -->
+          <div class="">
+            <!-- hero image -->
+            <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+              <img src="https://rukminim3.flixcart.com/fk-p-flap/1620/270/image/69b85f44d94cd370.jpg?q=20" alt="hero image" class="object-cover w-[100%] h-full">
+            </div>
+          </div>
+          <!-- items main sec 1 -->
+           <div class="container mx-auto px-4 py-3 flex gap-4  items-center justify-between">
+            <!-- card main sec -->
+             <div class="max-w-[1244px] bg-white w-[100%] p-3">
+              <!-- heding text -->
+              <div class="flex items-center  mb-5 justify-between">
+                <h1 class="text-[24px] font-[500]">Best of Electronics</h1>
+              <i class="border-[1px] rounded-[50%] px-[5px] py-[0px] text-center bg-[#2a55e5] text-white text-[24px] ri-arrow-right-s-line"></i>
+              </div>
+              <!-- card sec -->
+               <div class="flex overflow-hidden bg-white  gap-5">
+                 <!-- card item 1-->
+                 <div id="cards" class="flex space-x-4  hover:overflow-x-scroll gap-2 overflow-y-hidden p-1"></div>
+               </div>
+              </div>
+              <!-- aside bar -->
+               <div class="w-60 bg-white p-[16px] border-[1px] border-gray-200 rounded-[10px]">
+                <img src="https://rukminim2.flixcart.com/fk-p-flap/530/810/image/d5d599c240c9b2ea.jpeg?q=20" class="" alt="">
+               </div>
+           </div>
+
+           <!-- items main sec 2 -->
+            <div class="container mx-auto px-4 py-3 flex items-center ">
+              <div class=" bg-white w-[100%] p-3">
+                <!-- heding text -->
+                <div class="flex items-center  mb-5 justify-between">
+                  <h1 class="text-[24px] font-[500]">Beauty, Food, Toys & more</h1>
+                <i class="border-[1px] rounded-[50%] px-[5px] py-[0px] text-center bg-[#2a55e5] text-white text-[24px] ri-arrow-right-s-line"></i>
+                </div>
+                <!-- card sec -->
+                 <div class="flex overflow-hidden bg-white  gap-5">
+                   <!-- card item 1-->
+                   <div id="cards2" class="flex space-x-4  hover:overflow-x-scroll gap-2 overflow-y-hidden p-1"></div>
+                 </div>
+                </div>
+            </div>
+            <!-- items main sec 3 -->
+            <div class="container  mx-auto px-4 py-3 flex gap-4   items-center justify-between">
+              <!-- card main sec -->
+               <div class="max-w-[448px] bg-white w-[100%] p-3">
+                <!-- heding text -->
+                <div class="flex items-center  mb-5 justify-between">
+                  <h1 class="text-[24px] font-[500]">Best of Electronics</h1>
+                <i class="border-[1px] rounded-[50%] px-[5px] py-[0px] text-center bg-[#2a55e5] text-white text-[24px] ri-arrow-right-s-line"></i>
+                </div>
+                <!-- card sec -->
+                 <div class="flex overflow-hidden bg-white  gap-5">
+                   <!-- card item 1-->
+                  <div id="cards3" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-2 gap-4"></div>
+
+                 </div>
+                </div>
+                <!-- aside bar -->
+                 <div class="w-[63%] bg-white p-[16px] border-[1px] border-gray-200 rounded-[10px]">
+                  <img src="https://rukminim1.flixcart.com/www/1070/720/promos/26/09/2023/ed27f892-1bc6-462f-805b-953f5add4f6a.jpg?q=80" class="" alt="">
+                 </div>
+             </div>
+             <!-- items main sec 4 -->
+             
+              <div class="container  mx-auto px-4 py-3 flex gap-4  items-center justify-between">
+                <div class="flex  justify-evenly">
+                <!-- card main sec -->
+                 <div class=" bg-white p-3">
+                  <!-- heding text -->
+                  <div class="flex items-center  mb-5 justify-between">
+                    <h1 class="text-[24px] font-[500]">Best of Electronics</h1>
+                  <i class="border-[1px] rounded-[50%] px-[5px] py-[0px] text-center bg-[#2a55e5] text-white text-[24px] ri-arrow-right-s-line"></i>
+                  </div>
+                  <!-- card sec -->
+                   <div class="flex overflow-hidden bg-white  gap-5">
+                     <!-- card item 1-->
+                    <div id="cards4" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-2 gap-4"></div>
+  
+                   </div>
+                  </div>
+               </div>
+               <!-- 2 -->
+               <div class="container  mx-auto px-4 py-3 flex gap-4  items-center justify-between">
+                <!-- card main sec -->
+                 <div class="max-w-[448px] bg-white w-[100%] p-3">
+                  <!-- heding text -->
+                  <div class="flex items-center  mb-5 justify-between">
+                    <h1 class="text-[24px] font-[500]">Best of Electronics</h1>
+                  <i class="border-[1px] rounded-[50%] px-[5px] py-[0px] text-center bg-[#2a55e5] text-white text-[24px] ri-arrow-right-s-line"></i>
+                  </div>
+                  <!-- card sec -->
+                   <div class="flex overflow-hidden bg-white  gap-5">
+                     <!-- card item 1-->
+                    <div id="cards5" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-2 gap-4"></div>
+  
+                   </div>
+                  </div>
+               </div>
+               <!-- 3 -->
+               <div class="container  mx-auto px-4 py-3 flex gap-4  items-center justify-between">
+                <!-- card main sec -->
+                 <div class="max-w-[448px] bg-white w-[100%] p-3">
+                  <!-- heding text -->
+                  <div class="flex items-center  mb-5 justify-between">
+                    <h1 class="text-[24px] font-[500]">Best of Electronics</h1>
+                  <i class="border-[1px] rounded-[50%] px-[5px] py-[0px] text-center bg-[#2a55e5] text-white text-[24px] ri-arrow-right-s-line"></i>
+                  </div>
+                  <!-- card sec -->
+                   <div class="flex overflow-hidden bg-white  gap-5">
+                     <!-- card item 1-->
+                    <div id="cards6" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-2 gap-4"></div>
+  
+                   </div>
+                  </div>
+                  </div>
+               </div>
+              <!-- items main sec 5 -->
+             
+              <div class="container  mx-auto px-4 py-3 flex gap-4  items-center justify-between">
+                <div class="flex  justify-evenly">
+                <!-- card main sec -->
+                 <div class=" bg-white p-3">
+                  <!-- heding text -->
+                  <div class="flex items-center  mb-5 justify-between">
+                    <h1 class="text-[24px] font-[500]">Best of Electronics</h1>
+                  <i class="border-[1px] rounded-[50%] px-[5px] py-[0px] text-center bg-[#2a55e5] text-white text-[24px] ri-arrow-right-s-line"></i>
+                  </div>
+                  <!-- card sec -->
+                   <div class="flex overflow-hidden bg-white  gap-5">
+                     <!-- card item 1-->
+                    <div id="cards7" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-2 gap-4"></div>
+  
+                   </div>
+                  </div>
+               </div>
+               <!-- 2 -->
+               <div class="container  mx-auto px-4 py-3 flex gap-4  items-center justify-between">
+                <!-- card main sec -->
+                 <div class="max-w-[448px] bg-white w-[100%] p-3">
+                  <!-- heding text -->
+                  <div class="flex items-center  mb-5 justify-between">
+                    <h1 class="text-[24px] font-[500]">Best of Electronics</h1>
+                  <i class="border-[1px] rounded-[50%] px-[5px] py-[0px] text-center bg-[#2a55e5] text-white text-[24px] ri-arrow-right-s-line"></i>
+                  </div>
+                  <!-- card sec -->
+                   <div class="flex overflow-hidden bg-white  gap-5">
+                     <!-- card item 1-->
+                    <div id="cards8" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-2 gap-4"></div>
+  
+                   </div>
+                  </div>
+               </div>
+               <!-- 3 -->
+               <div class="container  mx-auto px-4 py-3 flex gap-4  items-center justify-between">
+                <!-- card main sec -->
+                 <div class="max-w-[448px] bg-white w-[100%] p-3">
+                  <!-- heding text -->
+                  <div class="flex items-center  mb-5 justify-between">
+                    <h1 class="text-[24px] font-[500]">Best of Electronics</h1>
+                  <i class="border-[1px] rounded-[50%] px-[5px] py-[0px] text-center bg-[#2a55e5] text-white text-[24px] ri-arrow-right-s-line"></i>
+                  </div>
+                  <!-- card sec -->
+                   <div class="flex overflow-hidden bg-white  gap-5">
+                     <!-- card item 1-->
+                    <div id="cards9" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-2 gap-4"></div>
+  
+                   </div>
+                  </div>
+                  </div>
+               </div>
+
+                <!-- items main sec 10 -->
+            <div class="container mx-auto px-4 py-3 flex items-center ">
+              <div class=" bg-white w-[100%] p-3">
+                <!-- heding text -->
+                <div class="flex items-center  mb-5 justify-between">
+                  <h1 class="text-[24px] font-[500]">Beauty, Food, Toys & more</h1>
+                <i class="border-[1px] rounded-[50%] px-[5px] py-[0px] text-center bg-[#2a55e5] text-white text-[24px] ri-arrow-right-s-line"></i>
+                </div>
+                <!-- card sec -->
+                 <div class="flex overflow-hidden bg-white  gap-5">
+                   <!-- card item 1-->
+                   <div id="cards10" class="flex space-x-4  hover:overflow-x-scroll gap-2 overflow-y-hidden p-1"></div>
+                 </div>
+                </div>
+            </div>
+            <!-- items main sec 11 -->
+            <div class="container mx-auto px-4 py-3 flex items-center ">
+              <div class=" bg-white w-[100%] p-3">
+                <!-- heding text -->
+                <div class="flex items-center  mb-5 justify-between">
+                  <h1 class="text-[24px] font-[500]">Beauty, Food, Toys & more</h1>
+                <i class="border-[1px] rounded-[50%] px-[5px] py-[0px] text-center bg-[#2a55e5] text-white text-[24px] ri-arrow-right-s-line"></i>
+                </div>
+                <!-- card sec -->
+                 <div class="flex overflow-hidden bg-white  gap-5">
+                   <!-- card item 1-->
+                   <div id="cards11" class="flex space-x-4  hover:overflow-x-scroll gap-2 overflow-y-hidden p-1"></div>
+                 </div>
+                </div>
+            </div>
+            <!-- items main sec 12 -->
+            <div class="container  mx-auto px-4 py-3 flex gap-4  items-center justify-between">
+              <!-- card main sec -->
+               <div class="max-w-[448px] bg-white w-[100%] p-3">
+                <!-- heding text -->
+                <div class="flex items-center  mb-5 justify-between">
+                  <h1 class="text-[24px] font-[500]">Best of Electronics</h1>
+                <i class="border-[1px] rounded-[50%] px-[5px] py-[0px] text-center bg-[#2a55e5] text-white text-[24px] ri-arrow-right-s-line"></i>
+                </div>
+                <!-- card sec -->
+                 <div class="flex overflow-hidden bg-white  gap-5">
+                   <!-- card item 1-->
+                  <div id="cards12" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-2 gap-4"></div>
+
+                 </div>
+                </div>
+                <!-- aside bar -->
+                 <div class="w-[63%] bg-white p-[16px] border-[1px] border-gray-200 rounded-[10px]">
+                  <img src="https://rukminim1.flixcart.com/www/1070/720/promos/26/09/2023/ed27f892-1bc6-462f-805b-953f5add4f6a.jpg?q=80" class="" alt="">
+                 </div>
+             </div>
+             <!-- items main sec 13 -->
+             <div class="container mx-auto px-4 py-3 flex items-center ">
+              <div class=" bg-white w-[100%] p-3">
+                <!-- heding text -->
+                <div class="flex items-center  mb-5 justify-between">
+                  <h1 class="text-[24px] font-[500]">Beauty, Food, Toys & more</h1>
+                <i class="border-[1px] rounded-[50%] px-[5px] py-[0px] text-center bg-[#2a55e5] text-white text-[24px] ri-arrow-right-s-line"></i>
+                </div>
+                <!-- card sec -->
+                 <div class="flex overflow-hidden bg-white  gap-5">
+                   <!-- card item 1-->
+                   <div id="cards13" class="flex space-x-4  hover:overflow-x-scroll gap-2 overflow-y-hidden p-1"></div>
+                 </div>
+                </div>
+            </div>
+            <!-- items main sec 14-->
+            <div class="container mx-auto px-4 py-3 flex items-center ">
+              <div class=" bg-white w-[100%] p-3">
+                <!-- heding text -->
+                <div class="flex items-center  mb-5 justify-between">
+                  <h1 class="text-[24px] font-[500]">Beauty, Food, Toys & more</h1>
+                <i class="border-[1px] rounded-[50%] px-[5px] py-[0px] text-center bg-[#2a55e5] text-white text-[24px] ri-arrow-right-s-line"></i>
+                </div>
+                <!-- card sec -->
+                 <div class="flex overflow-hidden bg-white  gap-5">
+                   <!-- card item 1-->
+                   <div id="cards14" class="flex space-x-4  hover:overflow-x-scroll gap-2 overflow-y-hidden p-1"></div>
+                 </div>
+                </div>
+            </div>
+          <!-- Footer section -->
+          <footer class="bg-[#172337] text-white py-10">
+            <div class="container mx-auto px-4">
+              <!-- Main footer content -->
+              <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <!-- About column -->
+                <div>
+                  <h3 class="text-[#878787] uppercase mb-4 text-xs font-medium">ABOUT</h3>
+                  <ul class="space-y-2 text-xs">
+                    <li><a href="#" class="hover:underline">Contact Us</a></li>
+                    <li><a href="#" class="hover:underline">About Us</a></li>
+                    <li><a href="#" class="hover:underline">Careers</a></li>
+                    <li><a href="#" class="hover:underline">Flipkart Stories</a></li>
+                    <li><a href="#" class="hover:underline">Press</a></li>
+                    <li><a href="#" class="hover:underline">Corporate Information</a></li>
+                  </ul>
+                </div>
+          
+                <!-- Group companies column -->
+                <div>
+                  <h3 class="text-[#878787] uppercase mb-4 text-xs font-medium">GROUP COMPANIES</h3>
+                  <ul class="space-y-2 text-xs">
+                    <li><a href="#" class="hover:underline">Myntra</a></li>
+                    <li><a href="#" class="hover:underline">Cleartrip</a></li>
+                    <li><a href="#" class="hover:underline">Shopsy</a></li>
+                  </ul>
+                </div>
+          
+                <!-- Help column -->
+                <div>
+                  <h3 class="text-[#878787] uppercase mb-4 text-xs font-medium">HELP</h3>
+                  <ul class="space-y-2 text-xs">
+                    <li><a href="#" class="hover:underline">Payments</a></li>
+                    <li><a href="#" class="hover:underline">Shipping</a></li>
+                    <li><a href="#" class="hover:underline">Cancellation & Returns</a></li>
+                    <li><a href="#" class="hover:underline">FAQ</a></li>
+                  </ul>
+                </div>
+          
+                <!-- Consumer Policy column -->
+                <div>
+                  <h3 class="text-[#878787] uppercase mb-4 text-xs font-medium">CONSUMER POLICY</h3>
+                  <ul class="space-y-2 text-xs">
+                    <li><a href="#" class="hover:underline">Cancellation & Returns</a></li>
+                    <li><a href="#" class="hover:underline">Terms Of Use</a></li>
+                    <li><a href="#" class="hover:underline">Security</a></li>
+                    <li><a href="#" class="hover:underline">Privacy</a></li>
+                    <li><a href="#" class="hover:underline">Sitemap</a></li>
+                    <li><a href="#" class="hover:underline">Grievance Redressal</a></li>
+                    <li><a href="#" class="hover:underline">EPR Compliance</a></li>
+                  </ul>
+                </div>
+              </div>
+          
+            
+          
+              <!-- Social media icons -->
+              <div class="mt-8 flex space-x-4">
+                <a href="#" class="text-gray-400 hover:text-white">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white">
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </div>
+            </div>
+          
+            <!-- Bottom footer -->
+            <div class="border-t border-gray-700 mt-8 pt-8">
+              <div class="container mx-auto px-4 flex flex-wrap justify-between items-center">
+                <div class="flex space-x-4 mb-4 md:mb-0">
+                  <a href="#" class="text-yellow-400 hover:underline flex items-center">
+                    <i class="fas fa-shopping-bag mr-2"></i> Become a Seller
+                  </a>
+                  <a href="#" class="text-white hover:underline flex items-center">
+                    <i class="fas fa-star mr-2"></i> Advertise
+                  </a>
+                  <a href="#" class="text-white hover:underline flex items-center">
+                    <i class="fas fa-gift mr-2"></i> Gift Cards
+                  </a>
+                  <a href="#" class="text-white hover:underline flex items-center">
+                    <i class="fas fa-question-circle mr-2"></i> Help Center
+                  </a>
+                </div>
+                <p class="text-xs text-gray-400">&copy; 2007-2025 Flipkart.com</p>
+                <div class="flex space-x-2 mt-4 md:mt-0">
+                 <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/payment-method-c454fb.svg" alt="">
+                  <!-- Add more payment icons as needed -->
+                </div>
+              </div>
+            </div>
+          </footer>
+      <!-- js section --> 
+        <script src="./demo.js"></script>
+</html>
+</body>
+</html>
